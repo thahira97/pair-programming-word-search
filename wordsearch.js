@@ -8,7 +8,7 @@ const wordSearch = (letters, word) => {
   }
   const transLetters = transpose(letters);
   const verticalJoin = transLetters.map((ls) => ls.join(""));
-  for (l of horizontalJoin) {
+  for (l of verticalJoin) {
     if (l.includes(word)) {
       return true;
     }
